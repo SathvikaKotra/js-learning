@@ -31,5 +31,24 @@ var name = window.prompt ("What is ur name?");
 var age = window.prompt ("How old are you?");
 document.write ( "Hey " + name + ", How are you?" + "<br>");
 document.write ( "Do you like being " + age + " years old ? " + "<br>");
+//a basic calc
+var num1 = window.prompt("Enter a number");
+var num2 = window.prompt("Enter another number");
 
+num1 = parseFloat (num1);
+num2 = parseFloat (num2);
+
+document.write(num1 + num2 + "<br>");
+
+var fruits = ["Apples", "Oranges", "Peaches"];  
+document.write(fruits + "<br>");  
+
+document.write(fruits.length + "<br>");  
+
+var fruitString = fruits.join(","); 
+var newFruits = fruitString.split(","); 
+
+document.write(newFruits[2]);  
+document.body.innerHTML("hey");
+document.write(phrase + "<br>");
 
