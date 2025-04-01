@@ -1,4 +1,4 @@
-var phrase = "To be or not to be";
+/*var phrase = "To be or not to be";
 var age = 25;
 var gpa = 3.1;
 var isMale = false; // Boolean
@@ -52,3 +52,58 @@ document.write(newFruits[2]);
 document.body.innerHTML("hey");
 document.write(phrase + "<br>");
 
+function sayHi(){
+    document.write("<h1>Hello Sathvi</h1>");
+    alert("Hey");
+}
+sayHi();
+
+function sayHi(name, age){
+    document.write("<h1>Hello " + name + "</h1>");
+    document.write("<p>You are " + age + " years old</p>");
+    alert("Hey");
+}
+sayHi("Sathvi", 24);
+function addition(num1, num2){
+    return num1 + num2;
+}
+var addedNumbers = addition(4, 100);
+document.write(addition(4, 5) + "<br>");
+document.write(addedNumbers);
+
+//accessing html elements
+var header = document.getElementById("header");
+header.innerHTML = "Sathvika";
+header.style.color = "maroon";
+header.style.backgroundColor = "grey";
+var link = document.getElementById("link");
+link.href = "https://amazon.com";
+link.style = "color:blue;"
+*/
+//event listeners
+function handleClick(element){
+    //alert("Clicked");
+    element.innerHTML = "Clicked"
+    element.style="background-color:pink;"
+}
+
+var image = document.getElementById("image");
+image.addEventListener("mouseover", function () {
+    this.style.boxShadow = "2px 2px 2px grey";
+    this.style.width = "110px";
+});
+image.addEventListener("mouseout", function () {
+    this.style.boxShadow = "";
+    this.style.width = "100";
+});
+
+var messages = document.getElementById("messages");
+var textbox = document.getElementById("textbox");
+var button = document.getElementById("button");
+
+button.addEventListener("click", function(){
+    var newMessage = document.createElement("li");
+    newMessage.innerHTML = textbox.value;
+    messages.appendChild(newMessage);
+    textbox.value = "";
+});
