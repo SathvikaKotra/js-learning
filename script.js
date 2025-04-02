@@ -107,3 +107,59 @@ button.addEventListener("click", function(){
     messages.appendChild(newMessage);
     textbox.value = "";
 });
+ 
+var isMale = true;
+var isTall = true;
+
+
+if(isMale && isTall){
+   document.write("You are a tall male");
+} else {
+    document.write("You are either not tall or not male or both ");
+}
+function max(num1, num2, num3) {
+    if(num1>=num2 && num1>=num3){
+        return num1;
+    }else if (num2>= num1 && num2>=num3){
+        return num3;
+    }
+}
+document.write(max(2, 3, 5));
+function getDayName(dyNum){
+    var day;
+
+    switch(dayNum){
+        case 0:
+            day = "Sunday";
+            break;
+        case 1:
+            day = "Monday";
+            break;
+        case 2:
+            day = "Tuesday";
+            break;
+        case 3:
+            day = "Wednesday";
+            break;
+        case 4:
+            day = "Thursday";
+            break;
+        case 5:
+            day = "Firday";
+            break;
+        case 6:
+            day = "Saturday";
+            break;
+            default:
+                day = "Day doesnt exist";
+    }
+    document.write(getDayName(6));
+  /*  if(dayNum == 0){
+        day = "Sunday";
+    }else if (dayNum = 1){
+        day = "Monday";
+    }*/
+}
+//objects
+//real world objects
+///whileloops
